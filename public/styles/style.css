@@ -1,0 +1,185 @@
+
+
+/* LAYOUT */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, Dancing Script, sans-serif;
+}
+
+html {
+    background-color: white;
+}
+
+.main-div-h1 {
+    margin-bottom: 40px;
+    font-size: 60px;
+    color: white;
+    text-shadow: 2px 2px black;
+    text-decoration: none;
+}
+
+.main-div-h1:hover {
+    text-shadow: 4px 4px black;
+    outline: none;
+}
+
+.contacts {
+    background-color:  rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: row;
+    color: white;
+    align-items: center;
+    font-size: 10px;
+    font-family: Dancing Script;
+    justify-content: flex-end;
+    padding: 5px 10px 5px 0;
+}
+
+.contacts img {
+    height: 30px;
+}
+
+.main-div-box {
+    background-image: url(/images/spotify-background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    height: 760px;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.main-div {
+    padding: 80px 100px;
+    background: rgba(250, 250, 250, 0.6);
+}
+
+.main-div-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-div-input {
+ padding: 10px 400px 10px 10px;
+ border-radius: 2%;
+ border: 1px solid lightgrey;
+ outline: none;
+}
+
+.main-div-form-btn {
+    background-color: #FA6863;
+    color: white;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 10px;
+    border-radius: 1%;
+    border: 1px solid #FA6863;
+}
+
+.main-div-form-btn:hover {
+    cursor: pointer;
+    background-color: rgba(200,83,79);
+    outline: none;
+}
+
+
+/* ARTISTS / ALBUMS */
+
+
+.div-search-result-h1 {
+    padding: 50px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border-top: 2px solid #FA6863;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 30px;
+}
+
+.div-search-result-p {
+    background-color: white;
+    color: black;
+    transform: skewX(-15deg);
+    margin-right: 180px;
+    margin-left: 180px;
+    margin-top: 5px;
+}
+
+.div-search-result-box {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5%;
+    width: auto;
+    height: 700px; 
+    margin-right: 500px;
+    margin-left: 500px;
+    
+}
+
+.div-search-result {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.div-search-result img {
+    height: 250px;
+    width: 250px;
+}
+
+.div-search-result-details {
+    margin-top: 15px;
+    text-align: center;
+    color: white;
+}
+
+.div-search-result-details button{
+background-color: #FA6863;
+color: white;
+border-radius: 20%;
+padding: 10px;
+border: 1px solid #FA6863;
+margin-top: 20px;
+font-weight: 700;
+outline: none;
+}
+
+.div-search-result-details button:hover{
+cursor: pointer;
+background-color: rgba(200,83,79);
+outline: none;
+}
+
+/* TRACKS */
+
+
+.div-h2-audio-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    border: 1px solid #F1F3F4;
+    padding: 10px;
+}
+
+.div-h2-audio {
+    width: 600px;
+    align-items: center;
+    display: flex;
+}
+
+.div-h2-audio-box audio {
+    outline: none;
+}

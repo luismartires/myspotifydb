@@ -1,0 +1,25 @@
+<section>
+    <div class="div-search-result-h1">
+        <h1>Albums of:<br>
+            <p class="div-search-result-p">" {{artistName}} " </p>
+        </h1>
+    </div>
+
+    <div class="div-search-result-box">
+        {{#each albums}}
+
+        <form class="div-search-result" action="/tracks/{{id}}" method="GET">
+            <img src="{{images.[0].url}}" alt="{{name}}">
+
+            <div class="div-search-result-details">
+                <h2>{{name}}</h2>
+                <button>View Tracks</button>
+            </div>
+
+        </form>
+
+        {{/each}}
+
+    </div>
+
+</section>

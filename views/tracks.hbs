@@ -1,0 +1,23 @@
+<section>
+    <div class="div-search-result-h1">
+        <h1>Tracks of:<br>
+            <p class="div-search-result-p">" {{albumName}} "</p>
+        </h1>
+    </div>
+
+    <div>
+
+        {{#each tracks}}
+
+        <div class="div-h2-audio-box">
+            <h2 class="div-h2-audio">
+                {{track_number}}. {{name}}
+            </h2>
+            <audio controls>
+                <source src="{{preview_url}}" type="audio/mpeg">
+            </audio>
+        </div>
+
+        {{/each}}
+    </div>
+</section>
